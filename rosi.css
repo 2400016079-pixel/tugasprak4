@@ -162,3 +162,57 @@ body {
         0 15px 35px rgba(255, 80, 160, 0.7),
         0 0 35px rgba(255, 210, 230, 1);
 }
+
+
+@media (max-width: 480px) {
+
+    body {
+        overflow: auto; /* biar HP bisa scroll */
+        padding: 20px;
+    }
+
+    .glass {
+        width: 90%;
+        padding: 25px;
+        margin-top: 40px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    #output {
+        font-size: 1.1rem;
+    }
+
+    .magic-btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+
+    /* ORB DIBUAT PAKAI VW SUPAYA IKUT LAYAR HP */
+    .orb {
+        width: 60vw;
+        height: 60vw;
+        filter: blur(40px);
+    }
+
+    .orb.pink { top: -20vw; left: -20vw; }
+    .orb.white { bottom: -20vw; right: -20vw; }
+    .orb.soft { top: 50vw; right: 5vw; }
+
+    /* ribbon juga dikecilkan */
+    .ribbon {
+        width: 120vw;
+        height: 40vw;
+        top: 25%;
+        left: 50%;
+        transform: translateX(-50%) rotate(-2deg);
+    }
+
+    /* emoji shape agar tidak terlalu besar */
+    .shape {
+        font-size: 20px;
+    }
+}
