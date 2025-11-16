@@ -1,27 +1,42 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Useless Facts</title>
-    <link rel="stylesheet" href="rosi.css">
+    <link rel="stylesheet" href="rosi.css" />
 </head>
 <body>
+<div class="orb pink"></div>
+<div class="orb white"></div>
+<div class="orb soft"></div>
+<div class="sparkle" style="top: 20%; left: 15%;"></div>
+<div class="sparkle" style="top: 50%; left: 80%;"></div>
+<div class="sparkle" style="top: 70%; left: 30%;"></div>
+<div class="sparkle" style="top: 30%; left: 60%;"></div>
+<div class="sparkle" style="top: 85%; left: 50%;"></div>
+<div class="shape" style="top: 25%; left: 70%;">💖</div>
+<div class="shape" style="top: 65%; left: 20%;">✨</div>
+<div class="shape" style="top: 40%; left: 10%;">💗</div>
+<div class="shape" style="top: 80%; left: 75%;">🌟</div>
+<div class="ribbon"></div>
 
-    <!-- Background Dekorasi -->
-    <div class="shape shape1"></div>
-    <div class="shape shape2"></div>
-    <div class="shape shape3"></div>
+    <div class="wrapper">
 
-    <div class="container">
-        <h1 class="title">🤪 Random Useless Facts</h1>
+        <h1 class="title">
+            <span class="emoji">🤪</span> Random Useless Facts
+        </h1>
 
-        <div class="card">
-            <p id="factText" class="fact-text">Memuat fakta...</p>
-            <button class="btn" onclick="generateFact()">Fakta Random Lain 🔄</button>
+        <div class="card glass">
+            <p id="output">Klik tombol untuk mendapatkan fakta/pesan random!</p>
+
+            <button class="magic-btn" onclick="generateRandom()">
+                🔄 Get Another Random Fact
+            </button>
         </div>
+
     </div>
 
-<script src="rosi.js"></script>
+    <script src="rosi.js"></script>
 </body>
 </html>
